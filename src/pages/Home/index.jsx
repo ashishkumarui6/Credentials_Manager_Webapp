@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./index.module.css";
 import Button from "../../widgets/Button";
+import { MdDelete } from "react-icons/md";
+import { FaRegEdit } from "react-icons/fa";
+import From from "../From";
 
 const Home = () => {
+  const [hide, setHide] = useState(false);
   return (
     <>
       <div className={styles.home}>
-        <div className={styles.Btn}>
+        <div className={styles.Btn} onClick={() => setHide(!hide)}>
           <Button />
         </div>
+        {hide && <From />}
         <table className={styles.table}>
           <thead>
             <tr>
@@ -27,7 +32,16 @@ const Home = () => {
               <td>Mobile No.</td>
               <td>Email Id</td>
               <td>Password</td>
-              <td>Action</td>
+              <td>
+                <div className="iconCont">
+                  <span>
+                    <FaRegEdit size={25} />
+                  </span>
+                  <span>
+                    <MdDelete size={25} />
+                  </span>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>
