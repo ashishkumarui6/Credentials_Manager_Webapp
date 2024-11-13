@@ -7,13 +7,14 @@ import From from "../From";
 
 const Home = () => {
   const [hide, setHide] = useState(false);
+
   return (
     <>
       <div className={styles.home}>
         <div className={styles.Btn} onClick={() => setHide(!hide)}>
           <Button />
         </div>
-        {hide && <From />}
+        {hide && <From onClick={() => setHide(!hide)} />}
         <table className={styles.table}>
           <thead>
             <tr>

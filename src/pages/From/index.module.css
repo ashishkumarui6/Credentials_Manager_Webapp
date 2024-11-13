@@ -13,7 +13,7 @@
 }
 
 .form{
-    max-width: 550px;
+    max-width: 500px;
     background: #fff;
     background-color: #ebecf0;
     border: 1px solid #ebecf0;
@@ -65,11 +65,37 @@ form h2{
 
 .fromBtn input{
     padding: 16px 20px;
+    color: #A594F9;
+    border: 0;
+    border-radius: 320px;
+    font-size: 16px;
+    outline: 0;
+    padding: 16px;
+    text-shadow: 1px 1px 0 #fff;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    cursor: pointer;
+    font-weight: 700;
+    font-weight: 600;
+    width: 150px;
+    text-transform: capitalize;
 }
 
 
 .fromBtn button{
     padding: 16px 20px;
+    color: #A594F9;
+    border: 0;
+    border-radius: 320px;
+    font-size: 16px;
+    outline: 0;
+    padding: 16px;
+    text-shadow: 1px 1px 0 #fff;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    cursor: pointer;
+    font-weight: 700;
+    font-weight: 600;
+    width: 150px;
+    text-transform: capitalize;
 }
 
 
